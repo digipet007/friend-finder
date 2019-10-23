@@ -1,6 +1,6 @@
 # node_and_mysql_inventory_tracker
 
-This is a friend finder app that rins users through a personality test, compares the results with other users, and then displays their best match. This app uses Express to handle routing.
+This is a friend finder app that runs users through a personality test, compares the results with other users, and then displays their best friend match. This app uses Express to handle routing.
 
 ## Getting Started
 
@@ -34,12 +34,12 @@ node server.js
 ```
 
 Then go to the following URL in your browser: `localhost:8080`
-you should be able to click on the links and enter/display data on the survey page at `localhost:8080/survey`. 
-To check that the data has been captured, go to `localhost:8080/api/friends`
+You should be able to click on the links and enter data on the survey page at `localhost:8080/survey`. 
+To check that the data has been captured, go to `localhost:8080/api/friends` or click the API link at the bottom of the page.
 
 
 ## Deployment and General Use
-This app can be deployed to a server, such as Heroku or AWS, for online use from different devices. Data is stored on the server.
+This app can be deployed to a server, such as Heroku or AWS, for online use from different devices. Data input by the user is stored on the server as well.
 
 ## Built With
 

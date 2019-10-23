@@ -8,7 +8,7 @@ module.exports = function (app) {
         res.json(friends);
     });
 
-    //route for viewing all friends
+    //route for viewing best match
     app.get('/api/friends', function(req, res) {
         var bestMatch = {
             name: "",
