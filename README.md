@@ -6,6 +6,8 @@ This is a friend finder app that runs users through a personality test, compares
 
 These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
 
+For a demo of the app, visit: <https://damp-castle-80036.herokuapp.com/survey>
+
 ### Prerequisites
 
 To download and test this app, you will need the Node Packet Manager installed.  For more information, visit: <https://www.npmjs.com/get-npm>
