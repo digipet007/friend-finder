@@ -8,46 +8,31 @@ module.exports = function (app) {
         res.json(friends);
     });
 
-    //route for viewing best match
-    app.get('/api/friends', function(req, res) {
-        var bestMatch = {
-            name: "",
-            photo: "",
-            friendDifference: 1000
-        };
+    app.post('/api/friends', function (req, res) {
+        
+        // var newPerson = {
+        //         name: req.body.name,
+        //         photo: req.body.photo,
+        //         scores: [
+        //             parseInt(req.body.scores[0]),
+        //             parseInt(req.body.scores[1]),
+        //             parseInt(req.body.scores[2]),
+        //             parseInt(req.body.scores[3]),
+        //             parseInt(req.body.scores[4]),
+        //             parseInt(req.body.scores[5]),
+        //             parseInt(req.body.scores[6]),
+        //             parseInt(req.body.scores[7]),
+        //             parseInt(req.body.scores[8]),
+        //             parseInt(req.body.scores[9]),
+        //             parseInt(req.body.scores[0])
+        //         ]
+        //     }
 
-        //take the result of the user's input POST from request.body, and parse it; assign that data to userScores
-        var userData = req.body;
-        var userScores = userData.scores;
 
-        //used to calculate difference between user's scores and other users in database
-        var totalDifference = 0;
+            console.log(req.body);
 
-        for (var i = 0; i = friends.length; i++) {
+        friends.push(req.body);
 
-            console.log(friends[i].name);
-            totalDifference = 0;
-
-            //loop through all scores of each friend
-            for (var j = 0; j < friends[i].scores[j]; j++) {
-                //find total difference between user scores and friends scores
-                //.abs returns absolute value
-                totalDifference += Math.abs(parseInt(userScores[j]) - parseInt(friends[i].scores[j]));
-
-                //find lowest difference between scores. If total difference is less than friendDifference
-                if (totalDifference <= bestMatch.friendDifference) {
-
-                    //best match reassigned the new friend
-                    bestMatch.name = friends[i].name;
-                    bestMatch.photo = friends[i].photo;
-                    bestMatch.friendDifference = totalDifference;
-                }
-            }
-        }
-
-        //save user's data to the database after checking
-        friends.push(userData); 
-        //return best match object in json format back to front end of the application
-        res.json(bestMatch);
-    });
+    })
+        
 }
