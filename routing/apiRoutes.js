@@ -29,7 +29,7 @@ module.exports = function (app) {
         //     }
 
 
-            console.log(req.body);
+            console.log("post route" + req.body);
 
         friends.push(req.body);
 

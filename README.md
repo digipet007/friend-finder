@@ -6,7 +6,7 @@ This is a friend finder app that runs users through a personality test, compares
 
 These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
 
-For a demo of the app, visit: <https://damp-castle-80036.herokuapp.com/survey>
+For a demo of the app, visit: <https://damp-castle-80036.herokuapp.com/>
 
 ### Prerequisites
 
@@ -41,7 +41,7 @@ To check that the data has been captured, go to `localhost:8080/api/friends` or 
 
 
 ## Deployment and General Use
-This app can be deployed to a server, such as Heroku or AWS, for online use from different devices. Data input by the user is stored on the server as well.
+This app can be deployed to a server, such as Heroku or AWS, for online use from different users. Data input by the user is stored on the server as well.
 
 ## Built With
 
