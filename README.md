@@ -12,7 +12,7 @@ For a demo of the app, visit: <https://damp-castle-80036.herokuapp.com/>
 
 To download and test this app, you will need the Node Packet Manager installed.  For more information, visit: <https://www.npmjs.com/get-npm>
 
-You will also need Node.js installed.  For more information, vidit <https://nodejs.org/en/download/>
+You will also need Node.js installed.  For more information, visit <https://nodejs.org/en/download/>
 
 ### Installing
 
